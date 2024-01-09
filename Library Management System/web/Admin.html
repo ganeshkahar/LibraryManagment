@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #808080;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background-color: #0000FF;
+  color: #FFFFFF;
+  padding: 20px;
+  font-size: 36px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.input-group label {
+  width: 20%;
+ 
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.input-group input {
+  width: 80%;
+  background-color: #0000FF;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button-group button {
+  width: 40%;
+  background-color: #808080;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0000FF;
+}
+</style>
+</head>
+<body>
+    <form action="AdminServlet" method="post">
+<div class="container">
+  <div class="header">
+    <h1>Event Management System</h1>
+  </div>
+  <div class="input-group">
+    <label for="user-id">User Id</label>
+    <input type="text" id="user-id" name="user-id" value="Admin">
+  </div>
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" value="Admin">
+  </div>
+  <div class="button-group">
+    <button id="cancel">Cancel</button>
+    <button id="login">Login</button>
+  </div><button ><a href="adminsinup.html">Singup</a></button>
+</div>
+    </form>
+    
+</body>
+</html>

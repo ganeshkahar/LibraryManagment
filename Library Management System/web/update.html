@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Create a grey background for the body */
+body {
+  background: #F0F0F0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container for the layout */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the buttons */
+.button {
+  display: inline-block;
+  width: 32%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: #1E90FF;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Style the update section */
+.update {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background: #1E90FF;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Create a flexbox layout for the update stages */
+.update-stages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style the update stage labels */
+.update-label {
+  display: inline-block;
+  width: 60%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the update stage radio buttons */
+.update-radio {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="button">Home</div>
+  <div class="button">Update</div>
+  <div class="button">LogOut</div>
+  <div class="update">
+    
+        <input type="radio" name="Received"  > <div class="update-label">Received</div><br>
+        <input type="radio" name="Received"><div class="update-label">Ready for Shipping</div><br>
+        <input type="radio" name="Received"><div class="update-label">Out For Delivery</div>
+
+  
+  </div>
+</div>
+</body>
+</html>
+```

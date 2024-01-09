@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.top-bar {
+        background-color: navy;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      
+      .top-bar ul {
+        list-style: none;
+        display: flex;
+      }
+      
+      .top-bar li {
+        margin: 10px;
+      }
+      
+      .forms {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: lightblue;
+        padding: 20px;
+      }
+      
+      .add-product, .product-details {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      
+      label, input, button {
+        display: block;
+        margin: 10px;
+      }
+      
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      </style>
+</head>
+<body>
+    <div class="top-bar">
+        <p>Welcome 'Vendor Name'</p>
+        <ul>
+          <li>   <a href="producttatus.html"  >Product Status</a></li>
+          <li><a href="request.html">Request Item </a></li>
+          <li>View Product</li>
+          <li>Log Out</li>
+        </ul>
+      </div>
+    <form action="Additemservlet" method="Post">
+      <div class="forms">
+        <div class="add-product">
+          <label for="name">Product Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="price">Product Price:</label>
+          <input type="number" id="price" name="price">
+          <label for="image">Product Image:</label>
+          <input type="file" id="image" name="image" accept="image/*">
+          <button>Add The Product</button>
+        </div>
+        <div class="product-details">
+          <img src="image.jpg" alt="Image">
+          <p>Image Name</p>
+          <p>Rs/-</p>
+          <button>Delete</button>
+          <button>Update</button>
+        </div>
+      </div>
+    </form>
+      
+</body>
+</html>

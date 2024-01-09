@@ -1,0 +1,198 @@
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Create a gradient background for the body */
+body {
+  background: linear-gradient(to right, #87CEFA, #1E90FF);
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container for the buttons */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the buttons */
+.button {
+  display: inline-block;
+  width: 18%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #87CEFA, #1E90FF);
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Style the shopping cart section */
+.cart {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+/* Style the cart title */
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Create a flexbox layout for the cart items */
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Style the cart item boxes */
+.cart-item {
+  flex: 1 0 16%;
+  height: 80px;
+  border-radius: 10px;
+  background: #F0F8FF;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the cart item image */
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Style the cart item name */
+.cart-item-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the cart item price */
+.cart-item-price {
+  color: green;
+}
+
+/* Style the cart item quantity */
+.cart-item-quantity {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 1px solid #87CEFA;
+}
+
+/* Style the cart item total price */
+.cart-item-total {
+  color: red;
+}
+
+/* Style the cart item action button */
+.cart-item-action {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  color: white;
+  background: #FF4500;
+  cursor: pointer;
+}
+
+/* Style the grand total box */
+.grand-total {
+  flex: 1 0 32%;
+  height: 80px;
+  border-radius: 10px;
+  background: #F0F8FF;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the grand total label */
+.grand-total-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the grand total value */
+.grand-total-value {
+  font-size: 24px;
+  color: red;
+}
+
+/* Style the bottom buttons */
+.bottom-button {
+  display: inline-block;
+  width: 40%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Style the delete all button */
+.delete-all {
+  background: linear-gradient(to bottom, #FF4500, #FF0000);
+}
+
+/* Style the proceed to checkout button */
+.proceed {
+  background: linear-gradient(to bottom, #32CD32, #008000);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="button">Home</div>
+  <div class="button">View Product</div>
+  <div class="button">Request Item</div>
+  <div class="button">Product Status</div>
+  <div class="button">LogOut</div>
+</div>
+<div class="cart">
+  <div class="cart-title">Shopping Cart</div>
+  <div class="cart-items">
+    <div class="cart-item">Image</div>
+    <div class="cart-item">Name</div>
+    <div class="cart-item">Price</div>
+    <div class="cart-item">Quantity</div>
+    <div class="cart-item">Total Price</div>
+    <div class="cart-item">Action</div>
+    <div class="cart-item"><img src="image.jpg" alt="Image"></div>
+    <div class="cart-item cart-item-name">Product Name</div>
+    <div class="cart-item cart-item-price">100/-</div>
+    <div class="cart-item"><input type="number" class="cart-item-quantity" value="2"></div>
+    <div class="cart-item cart-item-total">200/-</div>
+    <div class="cart-item cart-item-action">Remove</div>
+    <div class="grand-total">
+      <div class="grand-total-label">Grand Total</div>
+      <div class="grand-total-value">200/-</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bottom-button delete-all">Delete All</div>
+    <div class="bottom-button proceed">Proceed to CheckOut</div>
+  </div>
+</div>
+</body>
+</html>

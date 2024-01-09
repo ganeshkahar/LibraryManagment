@@ -1,0 +1,107 @@
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  font-size: 30px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #007bff;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  margin-bottom: 10px;
+}
+
+.input:focus {
+  border: 2px solid #007bff;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="title">
+  <h1>Event Management System</h1>
+</div>
+
+    <form action="usersiservlet" method="post">
+<div class="form-container">
+  <h2>Sign Up Form</h2>
+  
+    <label class="label" for="name">Name</label>
+    <input class="input" type="text" id="name" name="name" placeholder="User">
+
+    <label class="label" for="email">Email</label>
+    <input class="input" type="email" id="email" name="email" placeholder="User">
+
+    <label class="label" for="password">Password</label>
+    <input class="input" type="password" id="password" name="password" placeholder="User">
+
+    <input class="submit" type="submit" value="Sign Up">
+  
+</div></form>
+
+<button class="button">Chart</button>
+<button class="button">Back</button>
+
+</body>
+</html>
